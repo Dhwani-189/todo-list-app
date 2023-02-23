@@ -47,7 +47,7 @@ export const InputField = (props) => {
           </label>
         </div>
       )}
-      <div className="flex  items-center relative">
+      <div className=" relative">
         <input
           {...register(id)}
           {...{
@@ -72,12 +72,12 @@ export const InputField = (props) => {
             }
           }}
         />
-      </div>
       {showError && error && (
         <span className="ant-typography ant-typography-danger block mt-1">
           {error}
         </span>
       )}
+      </div>
     </>
   )
 }

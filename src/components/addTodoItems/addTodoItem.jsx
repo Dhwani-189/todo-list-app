@@ -39,14 +39,14 @@ const AddTodoItemComponent = () => {
       <form id="addTodoList" onSubmit={handleSubmit(onSubmit)}>
         <div className="w-46 h-36 pl-[20px] ml-48 mr-48 mt-16 bg-red ">
           <div className="text-white text-xl pt-7">My To Do List</div>
-          <div className="flex justify-center mt-5">
+          <div className=" flex justify-center mt-5">
             <InputField
               {...{
                 id: 'todoItem', 
                 register,
                 placeholder: 'Title...',
                 formState,
-                className: 'w-[100%]',
+                className: 'w-10/12',
               }}
             />
             <Button
